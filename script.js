@@ -9,6 +9,9 @@ const changeTurn = () => {
     return turn === "X" ? "O" : "X";
 };
 
+
+
+
 const checkWin = () => {
     const boxtexts = document.getElementsByClassName('square-text');
     const wins = [
@@ -54,6 +57,22 @@ const createSquare = (index) => {
         }
     });
 };
+
+
+const reset = document.querySelector('#reset');
+reset.addEventListener('click', () => {
+    const boxtexts = document.getElementsByClassName('square-text');
+    for (const boxtext of boxtexts) {
+        boxtext.innerText = '';
+    }
+
+    gameover = false;
+    turn = "X";
+    document.querySelector(".turn-for").innerText = `Turn for ${turn}`;
+
+    // Clear win notifications
+    document.querySelector(".turn-for").innerText = "Now it's turn for X";
+})
 
 board.forEach((item, index) => {
     createSquare(index);
