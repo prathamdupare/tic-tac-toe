@@ -49,6 +49,7 @@ const createSquare = (index) => {
     square.addEventListener("click", () => {
         if (squareText.innerText === '' && !gameover) {
             squareText.innerText = turn;
+            squareText.classList.add(turn === "X" ? "x-text" : "o-text");
             turn = changeTurn();
             checkWin();
             if (!gameover) {

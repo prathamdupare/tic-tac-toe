@@ -15,7 +15,7 @@ body {
     background-color: #F5F5FA;
 }
 .square {
-    background-color: hsl(327, 64%, 91%);
+    background-color: hsl(327, 75%, 95%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,6 +97,18 @@ main {
     background: linear-gradient(135deg, #f7c5c5, #d9d0fd);
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+.square-text.x-text {
+    
+    color: rgb(248, 147, 147); 
+    font-weight: bold;
+}
+
+.square-text.o-text {
+    color: rgb(51, 181, 241); 
+    font-weight: bold;
+}
+
 
 
 
