@@ -33,6 +33,9 @@ const checkWin = () => {
         ) {
             document.querySelector(".turn-for").innerText = `Player ${boxtexts[e[0]].innerText} wins!`;
             gameover = true;
+
+
+            document.querySelector('.gif').style.width = "100px"// Show the GIF containe
         }
     });
 };
@@ -73,6 +76,9 @@ reset.addEventListener('click', () => {
 
     // Clear win notifications
     document.querySelector(".turn-for").innerText = "Now it's turn for X";
+
+    const winGifContainer = document.querySelector('.win-gif');
+    winGifContainer.style.display = 'none';
 })
 
 board.forEach((item, index) => {
