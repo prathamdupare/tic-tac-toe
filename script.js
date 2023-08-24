@@ -80,5 +80,7 @@ reset.addEventListener('click', () => {
 
 board.forEach((item, index) => {
     createSquare(index);
-});
+}); 
+
+//d
 
